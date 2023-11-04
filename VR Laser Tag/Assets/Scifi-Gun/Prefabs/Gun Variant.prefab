@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95133b32ab297934cae070ef12512348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserObj: {fileID: 7808719976405088817, guid: 389c18cca998a6b49b4d374d0b7c89c4,
+  laserObj: {fileID: 5621837421780243204, guid: c7b904f078c447e4caa7f7c98a8d6cf2,
     type: 3}
   spawn: {fileID: 8619978802805198918}
   speed: 20
