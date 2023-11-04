@@ -25,6 +25,7 @@ public class FireLaser : MonoBehaviour
     void Fire(ActivateEventArgs args)
     {
         GameObject laser = Instantiate(laserObj);
+        laser.transform.LookAt(laser.transform.position + laser.GetComponent<Rigidbody>().velocity);
         laser.transform.position = spawn.position;
         laser.GetComponent<Rigidbody>().velocity = spawn.forward * speed;
         //Destroy(laser, 5);
