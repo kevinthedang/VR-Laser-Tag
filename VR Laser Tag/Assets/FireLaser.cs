@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.XRGrabInteractable;
-using UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class FireLaser : MonoBehaviour
 {
-    public GameObject laser;
+    public GameObject laserObj;
     public Transform spawn;
-    public float speed = 20.0;
+    public float speed = 20;
 
     // Start is called before the first frame update
     void Start()
     {
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
-        grabInteractable.activated.addListener(Fire);
+        grabInteractable.activated.AddListener(Fire);
     }
 
     // Update is called once per frame
@@ -27,7 +26,7 @@ public class FireLaser : MonoBehaviour
     {
         GameObject laser = Instantiate(laserObj);
         laser.transform.position = spawn.position;
-        laser.GetComponent<RigidBody>().velocity = spawn.forward * speed;
+        laser.GetComponent<Rigidbody>().velocity = spawn.forward * speed;
         //Destroy(laser, 5);
     }
 }
