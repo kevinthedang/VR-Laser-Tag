@@ -28,6 +28,6 @@ public class FireLaser : MonoBehaviour
         laser.transform.eulerAngles = new Vector3(spawn.position.x, spawn.position.y + 90, spawn.position.z + 90);
         laser.transform.position = spawn.position;
         laser.GetComponent<Rigidbody>().velocity = spawn.forward * speed;
-        //Destroy(laser, 5);
+        Destroy(laser, 3);
     }
 }
