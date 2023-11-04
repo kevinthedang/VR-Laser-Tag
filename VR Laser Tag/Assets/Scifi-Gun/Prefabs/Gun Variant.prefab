@@ -352,6 +352,7 @@ MonoBehaviour:
     type: 3}
   spawn: {fileID: 8619978802805198918}
   speed: 20
+  audioData: {fileID: 0}
 --- !u!82 &956789179519267759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -373,9 +374,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 50
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -408,7 +409,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
