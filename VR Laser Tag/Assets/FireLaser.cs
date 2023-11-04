@@ -25,7 +25,9 @@ public class FireLaser : MonoBehaviour
     void Fire(ActivateEventArgs args)
     {
         GameObject laser = Instantiate(laserObj);
-        laser.transform.eulerAngles = new Vector3(spawn.position.x, spawn.position.y + 90, spawn.position.z + 90);
+        laser.transform.eulerAngles = new Vector3(spawn.transform.eulerAngles.x,
+                                                  spawn.transform.eulerAngles.y + laser.transform.eulerAngles.y,
+                                                  spawn.transform.eulerAngles.z + laser.transform.eulerAngles.z);
         laser.transform.position = spawn.position;
         laser.GetComponent<Rigidbody>().velocity = spawn.forward * speed;
         Destroy(laser, 3);
