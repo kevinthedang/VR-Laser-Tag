@@ -22,7 +22,7 @@ public class FireLaser : MonoBehaviour
         //
     }
 
-    void Fire(ActivateEventArgs arg)
+    void Fire(ActivateEventArgs args)
     {
         GameObject laser = Instantiate(laserObj);
         laser.transform.position = spawn.position;
