@@ -40,16 +40,16 @@ public class PlayerController : MonoBehaviour {
     private Camera _cam;
 
     private void HandleRotation() {
-        var ray = _cam.ScreenPointToRay(Input.mousePosition);
+        // var ray = _cam.ScreenPointToRay(Input.mousePosition);
 
-        if (_groundPlane.Raycast(ray, out var enter)) {
-            var hitPoint = ray.GetPoint(enter);
+        // if (_groundPlane.Raycast(ray, out var enter)) {
+            // var hitPoint = ray.GetPoint(enter);
 
-            var dir = hitPoint - transform.position;
-            var rot = Quaternion.LookRotation(dir);
+            // var dir = transform.position;
+            // var rot = Quaternion.LookRotation(dir) + 5;
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _rotationSpeed * Time.deltaTime);
-        }
+            transform.rotation *= Quaternion.AngleAxis(90, Vector3.up);
+        // }
     }
 
     #endregion
