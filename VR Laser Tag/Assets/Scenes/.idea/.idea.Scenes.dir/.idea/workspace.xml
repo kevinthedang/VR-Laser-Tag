@@ -20,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Holster/HolsterObjects/BodySocketInventory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../LaserHit.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -57,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699143263785</updated>
-      <workItem from="1699143275111" duration="2635000" />
+      <workItem from="1699143275111" duration="3357000" />
     </task>
     <servers />
   </component>
