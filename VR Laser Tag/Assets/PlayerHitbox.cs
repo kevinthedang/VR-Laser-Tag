@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserHit : MonoBehaviour
+public class PlayerHitbox : MonoBehaviour
 {
+    public int hp;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.name = "Player";
+        hp = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //
     }
 
-    void OnCollisionEnter(Collision collision)
+    void takeDamage()
     {
-        if (collision.gameObject.name == "Player")
-            gameObject.GetComponent<ScriptName>().takeDamage();
+        hp -= 10;
 
-        Destroy(gameObject);
+        if (hp <= 0)
+            Destroy(gameObject);
     }
 }
