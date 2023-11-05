@@ -22,13 +22,13 @@ public class FlashbangBoom : MonoBehaviour
 
     void BoomHandler(ActivateEventArgs args)
     {
-        Invoke("Boom", 5);
+        Invoke("Boom", 3);
     }
     
     void Boom()
     {
         Destroy(gameObject, (float)0.1);
         GameObject flash = Instantiate(flashObj, transform.position, Quaternion.identity);
-        Destroy(flash, 2);
+        Destroy(flash, 1);
     }
 }
