@@ -19,7 +19,7 @@ public class LaserHit : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
-            gameObject.GetComponent<ScriptName>().takeDamage();
+            gameObject.GetComponent<Script>().takeDamage();
 
         Destroy(gameObject);
     }

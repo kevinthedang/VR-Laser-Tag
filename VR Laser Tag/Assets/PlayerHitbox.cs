@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHitbox : MonoBehaviour
 {
+    public Camera mainCamera;
     public int hp;
 
     // Start is called before the first frame update
@@ -16,7 +17,8 @@ public class PlayerHitbox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //
+        transform.position = mainCamera.transform.position;
+        transform.rotation = mainCamera.transform.rotation;
     }
 
     void takeDamage()
