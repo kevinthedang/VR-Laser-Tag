@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaserHit : MonoBehaviour
 {
+    public GameObject blast;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,9 @@ public class LaserHit : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        GameObject spawnBlast = Instantiate(blast);
+        spawnBlast.transform.position = transform.position;
+        Destroy(spawnBlast);
         Destroy(gameObject);
     }
 }
