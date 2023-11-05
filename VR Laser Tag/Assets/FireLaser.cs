@@ -31,6 +31,6 @@ public class FireLaser : MonoBehaviour
         laser.transform.position = spawn.position;
         audioData.Play();
         laser.GetComponent<Rigidbody>().velocity = spawn.forward * speed;
-        Destroy(laser, 3);
+        Destroy(laser, (float)1.5);
     }
 }
