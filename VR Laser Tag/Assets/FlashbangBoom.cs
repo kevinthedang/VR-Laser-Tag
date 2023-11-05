@@ -6,7 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class FlashbangBoom : MonoBehaviour
 {
     public GameObject flashObj;
-    public Camera mainCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -28,23 +27,8 @@ public class FlashbangBoom : MonoBehaviour
     
     void Boom()
     {
-        if (blinded())
-            Debug.Log("Blind");
-        else
-            Debug.Log("Clear");
         Destroy(gameObject, (float)0.1);
         GameObject flash = Instantiate(flashObj, transform.position, Quaternion.identity);
         Destroy(flash, 2);
-    }
-
-    bool blinded()
-    {
-        var planes = GeometryUtility.CalculateFrustumPlanes(mainCamera);
-        var point = transform.position;
-
-        foreach (var plane in planes)
-            return plane.GetDistanceToPoint(point) > 0;
-        
-        return false;
     }
 }
