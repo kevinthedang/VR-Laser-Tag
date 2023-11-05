@@ -13,7 +13,6 @@ public class FlashbangBoom : MonoBehaviour
     {
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.activated.AddListener(BoomHandler);
-        mainCamera = Camera.main;
     }
 
     // Update is called once per frame
