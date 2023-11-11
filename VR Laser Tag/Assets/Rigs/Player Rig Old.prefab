@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 6578117186478869723}
   - component: {fileID: 807946393516465463}
   m_Layer: 0
-  m_Name: Player Rig
+  m_Name: Player Rig Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,7 +1267,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 2150685253497199183}
+  - {fileID: 9099679587027193412}
+  - {fileID: 1262280836849301670}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
