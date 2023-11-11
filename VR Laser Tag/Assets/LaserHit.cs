@@ -22,6 +22,9 @@ public class LaserHit : MonoBehaviour
         GameObject spawnBlast = Instantiate(blast);
         spawnBlast.transform.position = transform.position;
         Destroy(spawnBlast);
+        if (collision.gameObject.name == "Player")
+            gameObject.GetComponent<Script>().takeDamage();
+
         Destroy(gameObject);
     }
 }
