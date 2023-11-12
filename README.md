@@ -4,6 +4,9 @@ An implementation of Virtual Reality Laser where you can absolutely obliterate a
 [gitignore generator](https://www.toptal.com/developers/gitignore)
 
 ## Description
+This started off as a project for the [Gonzaga University Hackathon 2023](https://cs.gonzaga.edu/hackathon/2023/index.html) where we were able to learn about virtual reality development, environment/asset creation and importing, and understanding how to use Unity and create C# scripts for games.  
+
+Now we would like to further develop this game to be our first so we can get a better feeling for VR games and possibly even multiplayer when we get there! For now we will be slowly working on the [features](#features) below.
 
 ## Features
 
